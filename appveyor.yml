@@ -14,6 +14,9 @@ os: Visual Studio 2015
 platform: Any CPU
 configuration: Release
 
+init:
+  - ps: Install-Module VSSetup -Scope CurrentUser
+
 build_script: build.bat pack
 
 artifacts:
