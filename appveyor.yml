@@ -16,6 +16,7 @@ configuration: Release
 
 init:
   - ps: Install-Module VSSetup -Scope CurrentUser
+  - ps: Get-VSSetupInstance -All
 
 build_script: build.bat pack
 
